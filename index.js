@@ -103,7 +103,7 @@ function deposit() {
       const accountName = answer["accountName"];
 
       //verify if account exists
-
+      
       if (!checkAccount(accountName)) {
         return deposit();
       }
@@ -279,6 +279,7 @@ function developer(){
             name: "contact",
             message: "Deseja entrar em contato com a assistencia do banco? Favor Responder com sim ou nao!",
           },
+         
         ])
         .then((answer) => {
           const amount = answer["contact"];
